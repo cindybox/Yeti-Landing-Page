@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+:root {
+  --main-white: #ffffff;
+  --secondary-white: #ebe9ea;
+  --light-grey: #d8d8d8;
+  --dark-grey: #4a4a4a;
+  --main-dark: #1e252c;
+
+  --nav-fontsize: 12px;
+  --nav-fontfamily: "Poppins", san-serif;
+
+  --header1-fontsize-mobile: 73px;
+  --header1-fontsize-web: 100px;
+  --header1-fontfamily: "Eczar", serif;
+
+  --header2-fontsize-mobile: 24px;
+  --header2-fontsize-web: 35px;
+  --header2-fontfamily: "Poppins", san-serif;
+
+  --p-fontsize-mobile: 18px;
+  --p-fontsize-web: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  height: 100%;
+  font-size: 16px;
+}
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: "Roboto Mono", san-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* universal font sizing */
+/* default to mobile size */
+h1 {
+  font-size: var(--header1-fontsize-mobile);
+  font-family: var(--header1-fontfamily);
+  -webkit-text-stroke: 0.1px var(--main-dark);
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
+  font-weight: 600;
+  line-height: 1.78;
+  color: var(--main-white);
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: var(--header2-fontsize-mobile);
+  font-family: var(--header2-fontfamily);
+  font-weight: 600;
+  line-height: 1.46;
+  letter-spacing: 0.46px;
+  color: var(--main-dark);
+  padding-bottom: 1em;
+}
+
+p {
+  font-size: var(--p-fontsize-mobile);
+  line-height: 1.56;
+  color: var(--dark-grey);
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+  h1 {
+    font-size: calc(var(--header1-fontsize-mobile) + 3.89 * (1vw - 4.8px));
+  }
+
+  h3 {
+    font-size: calc(var(--header2-fontsize-mobile) + 1.528 * (1vw - 4.8px));
+  }
+
+  p {
+    font-size: calc((var(--p-fontsize-web) + var(--p-fontsize-mobile)) / 2);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 992px) {
+  h1 {
+    line-height: 1;
+    letter-spacing: 5px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: var(--header1-fontsize-web);
+  }
+
+  h3 {
+    font-size: var(--header2-fontsize-web);
+  }
+
+  p {
+    font-size: var(--p-fontsize-web);
   }
 }
