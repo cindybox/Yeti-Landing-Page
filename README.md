@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm start`
+### How to Run The Project
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. `npm install` then `npm start` 
+2. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Summary
 - executed mobile and web design
