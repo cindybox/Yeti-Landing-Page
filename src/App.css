@@ -91,7 +91,7 @@ p {
 @media screen and (min-width: 992px) {
   h1 {
     line-height: 1;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
   }
 }
 

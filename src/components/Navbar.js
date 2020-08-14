@@ -74,7 +74,7 @@ const Navbar = () => {
 const NavbarContainer = styled.nav`
   width: 100vw;
   position: fixed;
-  position: relative;
+
   top: 0;
   left: 0;
   display: flex;
@@ -126,12 +126,22 @@ const NavbarContainer = styled.nav`
     top: 0;
     right: 0;
     background-color: var(--main-dark);
-    transition: width 1s 1s ease-in-out;
+    transition: width 1s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 9;
+  }
+  .open ul li {
+    padding: 2rem;
+  }
+
+  a {
+    color: var(--light-grey);
+  }
+  a:hover {
+    color: var(--main-white);
   }
 
   @media screen and (max-width: 992px) {

@@ -10,11 +10,7 @@ const Section3 = () => {
           src={require("../../images/image2.jpg")}
           alt="apple-image"
         />
-        <img
-          className="bottom-image"
-          src={require("../../images/mask.svg")}
-          alt="back-image"
-        />
+        <div className="bottom-image" />
       </div>
       <h1 className="section-title">Our Values</h1>
 
@@ -60,6 +56,7 @@ const SectionContainer = styled.section`
 
   .bottom-image {
     z-index: -1;
+    background-color: var(--light-grey);
     width: 76vw;
     height: 42vw;
   }
@@ -82,7 +79,7 @@ const SectionContainer = styled.section`
     }
 
     h3 {
-      margin-top: 4em;
+      margin-top: 2.5em;
       width: 50%;
       text-align: center;
     }

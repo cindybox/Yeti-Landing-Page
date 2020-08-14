@@ -12,11 +12,7 @@ const Section1 = () => {
             src={require("../../images/image1.jpg")}
             alt="apple-image"
           />
-          <img
-            className="bottom-image"
-            src={require("../../images/mask.png")}
-            alt="back-image"
-          />
+          <div className="bottom-image" />
         </div>
         <div className="section-content">
           <h3>Andy Griffith turned us down.</h3>
@@ -42,13 +38,16 @@ const SectionContainer = styled.section`
   .top-image {
     width: 76vw;
     height: 65vw;
+    position: relative;
   }
+
   .bottom-image {
     width: 76vw;
     height: 65vw;
     position: absolute;
     top: var(--image-offset-mobile);
     left: var(--image-offset-mobile);
+    background-color: var(--light-grey);
     z-index: -1;
   }
   h3 {

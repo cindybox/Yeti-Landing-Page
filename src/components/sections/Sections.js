@@ -37,7 +37,7 @@ const SectionContainer = styled.div`
   @media screen and (min-width: 992px) {
     padding: 0 9% 10rem 9%;
     .section:nth-of-type(1) {
-      margin-top: 8rem;
+      margin-top: 16rem;
     }
     .section {
       margin-top: calc(
