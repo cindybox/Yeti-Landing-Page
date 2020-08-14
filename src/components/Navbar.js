@@ -122,7 +122,7 @@ const NavbarContainer = styled.nav`
     display: block;
     width: 40%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: var(--main-dark);
