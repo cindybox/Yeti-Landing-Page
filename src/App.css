@@ -51,12 +51,11 @@ a:hover {
 h1 {
   font-size: var(--header1-fontsize-mobile);
   font-family: var(--header1-fontfamily);
-  -webkit-text-stroke: 0.1px var(--main-dark);
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000; */
+  -webkit-text-stroke: 1px var(--main-dark);
   font-weight: 600;
   line-height: 1.78;
-  color: var(--main-white);
+  color: transparent;
+
   letter-spacing: -1px;
 }
 
